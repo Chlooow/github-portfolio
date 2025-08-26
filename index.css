@@ -109,6 +109,18 @@ body {
         transform: scale(1.2);
     }
 
+    .icones a {
+    color: #fff; /* couleur de ton choix, ici marron */
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+    text-decoration: none; /* supprime le soulignement */
+}
+
+.icones a:hover {
+    color: #e6b5a3; /* couleur au survol */
+}
+
     /* centrer les icônes si besoin */
     .icones {
         text-align: center;
@@ -145,8 +157,8 @@ body {
 }
 
 .list-item {
-    background-color: #6b4a2b; /* Couleur des items de la liste */
-    color: #ffff; /* Couleur du texte dans les items */
+    background-color: #fff; /* Couleur des items de la liste */
+    color: #6b4a2b; /* Couleur du texte dans les items */
     padding: 30px 40px;
     border-radius: 20px; /* Bords arrondis pour ressembler à la forme */
     text-align: center;
@@ -161,14 +173,133 @@ body {
 }
 
 .list-item:hover {
-    background-color: #8d6e63; /* Nouvelle couleur de fond au survol */
+    background-color: #e6b5a3; /* Nouvelle couleur de fond au survol */
     transform: scale(1.05); /* Augmente légèrement la taille */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
 }
 
+.list-item.clicked {
+    /* Styles pour l'état cliqué */
+    background-color: #ffffff; 
+    transform: scale(1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    cursor: default; 
+    padding: 15px 20px; 
+    width: 600px; 
+    max-width: 600px;   
+    margin: 0 auto;    
+    display: block;
+}
+
+/* Optionnel : si tu veux que le hover ne s'applique jamais à l'élément cliqué */
+.list-item.clicked:hover {
+    transform: scale(1);
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*.separatorsection {
+    height: 2px;
+    background-color: #fff; /* couleur du séparateur 
+    margin: 20px 0;
+    width: 100%;
+}*/
+
 .list-item p {
     margin: 0;
 }
+
+
+    /* projet details */
+
+    #back-btn {
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      background-color: #e6b5a3;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+#back-btn:hover {
+    background-color: #d19986;
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;   /* Empile les projets verticalement */
+    align-items: center;      /* Centre la liste horizontalement */
+    gap: 30px;                /* Espacement entre les projets */
+    margin-top: 30px;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#back-to-top-text {
+    display: inline-block;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#back-to-top-text:hover {
+    color: #ffcc00;
+}
+
+
+.project-detail.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-item {
+    display: flex; 
+    align-items: flex-start;  
+    gap: 20px;                
+    margin-bottom: 20px;      
+    opacity: 0; /* Rendre l'élément invisible au début */
+    transition: opacity 0.5s ease-in;
+}
+
+.project-item.show-project {
+    opacity: 1; /* Rendre l'élément visible */
+}
+.project-image img {
+    object-fit: cover;
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+    border-radius: 15px;
+    width: 200px;             /* Largeur fixe de l'image */
+    height: auto;
+}
+
+.project-image img:hover {
+    filter: blur(0);
+}
+
+.project-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.project-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.project-info p {
+    /*font-size: 1.1em;
+    line-height: 1.5;
+    color: #ddd;*/
+    flex: 1;
+}
+
 
     /* Séparateur */
     .separator {
