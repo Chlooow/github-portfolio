@@ -1,0 +1,200 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #6b4a2b; /* marron comme sur la photo */
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Switch langues */
+    .lang-switch {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .lang-switch button {
+      background: #4a3320;
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      margin: 0 5px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .lang-switch button:hover {
+      background: #fff;
+      color: #4a3320;
+    }
+
+    /* Images rondes */
+    .images {
+      margin-top: 70px;
+    }
+    .images img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 20px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+    /* Titre */
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5em;
+      letter-spacing: 4px;
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    /* Texte */
+    .intro {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1.0em;
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+    }
+
+    .intro a {
+      color: #fff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* section */
+
+    .section {
+        opacity: 0;
+        transition: opacity 0.6s ease;
+        display: none; 
+    }
+
+    .section.active {
+        opacity: 0;
+        display: block;
+    }
+
+    /* about me section*/
+
+    /* Images rondes */
+    .images-about {
+      margin-top: 30px;
+    }
+    .images-about img {
+      width: 140px;
+      height: 140px;
+      border-radius: 5%;
+      object-fit: cover;
+      margin: 0 20px;
+    }
+
+    /* contact section */
+
+    /* cibler les icônes dans le conteneur .icones */
+    .icones i {
+        font-size: 30px; 
+        margin: 0 20px; 
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    /* effet au survol */
+    .icones i:hover {
+        transform: scale(1.2);
+    }
+
+    /* centrer les icônes si besoin */
+    .icones {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    /* work section */
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.text-box {
+    flex: 2;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 70px;
+}
+
+.list-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.list-item {
+    background-color: #6b4a2b; /* Couleur des items de la liste */
+    color: #ffff; /* Couleur du texte dans les items */
+    padding: 30px 40px;
+    border-radius: 20px; /* Bords arrondis pour ressembler à la forme */
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #8d6e63; /* Nouvelle couleur de fond au survol */
+    transform: scale(1.05); /* Augmente légèrement la taille */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+.list-item p {
+    margin: 0;
+}
+
+    /* Séparateur */
+    .separator {
+      width: 100px;
+      height: 2px;
+      background: #fff;
+      margin: 25px auto;
+    }
+
+    /* Menu */
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      display: inline-block;
+      margin: 12px;
+      padding: 14px 36px;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #fff;
+      color: #4a3320;
+    }
