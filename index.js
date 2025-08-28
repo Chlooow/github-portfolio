@@ -99,14 +99,68 @@ const backBtn = document.getElementById('back-btn'); // bouton fixe
 
 const projects = {
     "Datascience and IA": [
-        { title: "Prédiction des prix de maisons", description: "Utilisation de modèles de régression pour prédire les prix.", image: "images/houseprice.jpg" },
-        { title: "Analyse de sentiments", description: "Classification de tweets selon leur polarité (positif, négatif, neutre).", image: "images/sentiment.jpg" }
+        { title: "I.M Chatbot", 
+          description: `IN DEVELOPMENT - This project is to explore and try to develop a AI Chatbot on the theme of I.M a famous singer from Korea. 
+          By taking the ressources and knowledges from IBM course build your own chatbot, i'm able to do a chatbot with Javascript, PHP, HTML/CSS and JQuery and AJAX request. 
+          The project doesn't use models for now but i'll try to explore this path in the futur
+          Language : PHP, HTML/CSS, Javascript`, 
+          image: "images/projets/data/imchat.png" 
+        },
+        { title: "Bambam Chatbot", 
+          description: `IN DEVELOPMENT - This project is to explore and try to develop a AI Chatbot on the theme of Bambam a famous Thai singer based in South Korea. 
+          By taking the ressources and knowledges from fine-tuning, by created my own model from Bambam's content (X, Interview on Youtube...etc).
+          Language : Python + Flask`, 
+          image: "images/projets/data/bambamchatbot.png" 
+        },
+        { title: "Mini AI Chatbot", 
+          description: `This project explores IBM Watson Assistant through the "Build Your Own Chatbot" course. The goal is to create a customized chatbot for a specific use case, such as a business website. Through this project, I learned how to structure an AI assistant using key concepts such as:
+          - Intents: Understanding user intentions
+          - Entities: Identifying key information in user messages
+          - Dialogues: Building a smooth conversational flow
+          - Context Variables and Slots: Managing memory and dynamic interactions
+          I also applied these concepts to design my own personal chatbot. This project allowed me to earn a digital credential and strengthen my knowledge of Watson Assistant and chatbot development fundamentals.
+          Language : Python + Flask
+          Link : https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Feu-de.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-642c9c61-435a-43a7-bde2-bc85aace7e36%3A%3A10a22d45-4eb1-4a3d-8af8-758fccc3b878&integrationID=5c9ff6a5-f3d8-4674-bae0-843036beb7dc&region=eu-de&serviceInstanceID=642c9c61-435a-43a7-bde2-bc85aace7e36`, 
+          image: "images/projets/data/cholorchatbot.png" 
+        },
+        { title: "Binary classification of artificial medical data and personal data", 
+          description: `A machine learning project focused on predicting patient survival during hospital stays using supervised learning techniques. The dataset includes information from 80,000 patients with 342 variables such as age, gender, blood pressure, glucose levels, and more.
+          The goal is to build a predictive model that analyzes medical, demographic, and clinical data to determine the likelihood of a patient's survival based on their health records.
+          Language : Python + Jupyter Notebook
+          link to the repository: https://github.com/Chlooow/ISD_Projet/tree/main`, 
+          image: "images/projets/data/isd.png" 
+        },
+        { title: "Prediction of a Kpop group success mini project", 
+          description: `A supervised learning project aiming to predict the success of GOT7's songs using techniques such as gradient descent, logistic regression, perceptron, PCA/SVM, and convergence analysis. 
+          Although based on fictional data, the project leverages relevant features to forecast a song's popularity based on various metrics. (Mini IAS project to apply knowledge acquired during the module.)
+          Language : Python + Jupyter Notebook
+          link to the repository: https://github.com/Chlooow/GOT7_Success`, 
+          image: "images/projets/data/kpopsuccess.png" 
+        },
+        { title: "Mini Database management projects", 
+          description: `I designed databases to meet specific requirements:
+          -Sports Club Management System:
+          I created a database to organize sports events, managing sports types, venues (indoor/outdoor), fields, participants, and roles (organizer/player), with consideration for skill levels.
+          -Camping Management System:
+          I developed a database for a camping site, handling reservations, customer information, accommodations (tents, bungalows), and activity management, while tracking availability and services.
+          Language : SQL`, 
+          image: "images/projets/data/bdd.png" 
+        }
     ],
+
     "Web Development": [
         { title: "Portfolio personnel", 
           description: `My interactif portforlio .
-          Langage : Html + css + javascript`, 
+          Language : Html + css + javascript`, 
           image: "images/projets/web/portfolio.png" 
+        },
+        { title: "Showme", 
+          description: `During my development internship at TDF, I worked on ShowMe, a Python Flask application for network monitoring. 
+          I maintained and improved the application by implementing new features and enhancing its deployment process. In particular, 
+          I added Docker support to streamline deployment and ensure consistent environments across different systems. This project allowed me to gain hands-on experience with web development,
+           network monitoring tools, and containerization.
+          Language : Python + Flask`, 
+          image: "images/projets/web/showme.png" 
         },
         { title: "CafeCampus Start-up", 
           description: ` CaféCampus mobile application (PHP+Oracle)
@@ -114,31 +168,36 @@ const projects = {
           The app aims to enhance the experience of both students and staff by providing real-time information on the status of coffee machines, 
           including their availability and any malfunctions. 
           A little startup for this course and explore the side of creating one
-          Langage : HTML/CSS + PHP + Oracle
-          link to the repository :`, 
+          Language : HTML/CSS + PHP + Oracle
+          link to the repository :https://github.com/Chlooow/CafeCampus_CMS`, 
           image: "images/projets/web/cafecampus.png" 
         },
         { title: "Ahgavote - Voting plateform", 
           description: `Aghavote is an online voting platform designed to manage elections in a simple and efficient way. 
           Inspired by platforms like Belenios and Balotilo, Aghavote allows organizers to create secure and anonymous online votes, while simplifying the management of proxies and participation tracking. 
           This project was developed to explore web programming concepts such as jQuery and AJAX.
-          Langage : HTML/CSS + PHP
-          link to the repository`, 
-          image: "images/projets/web/ahgavote.png" 
+          Language : HTML/CSS + PHP
+          link to the repository: https://github.com/Chlooow/ProgWeb_IGOTvote`, 
+          image: "images/projets/web/aghavote.png" 
         },
         { title: "Epayi Ya Makoundou - shopping website", 
           description: `shopping website using and learning about React and Node.js
-          Langage : React + Node.js
-          link to the repository`, 
+          Language : React + Node.js`, 
           image: "images/projets/web/ahgavote.png" 
         },
         
         
     ],
     "UI/UX Design": [
-        { title: "None",
-          description: `None`, 
-          image: "images/uiux.jpg" 
+        { title: "Collab Campus",
+          description: `JavaFX Text processing application to learn more about User Interfaces as well as User experience concept
+          Language: Java + Java FX
+          link to the repository :https://github.com/Chlooow/PIIA_CollabCampus `, 
+          image: "images/projets/uxui/collabcampus.png" 
+        },
+        { title: "Garden App project",
+          description: `Mini project in order to learn about UX/UI and HCI interaction by designing a Garden managment`, 
+          image: "images/projets/uxui/garden.png" 
         }
     ],
 
@@ -182,8 +241,8 @@ const projects = {
           description: `Mathematical representation in the form of a 3D pyramid + 
           Processing in order to explore the graphical interfaces and 3D programming.
           langage : Java + Processing
-          Link to the repository : `, 
-          image: "images/algorithm.jpg" 
+          Link to the repository :https://github.com/Chlooow/Projet_Ulam_IGSD `, 
+          image: "images/projets/algo/ulam.png" 
         },
         { 
           title: "Simulation of an ant colony ", 
@@ -191,23 +250,35 @@ const projects = {
           This project showcases concepts like pathfinding, 
           environmental interaction
           langage : C++
-          Link to the repository : `, 
-          image: "images/algo/algorithm.jpg" 
+          Link to the repository : https://github.com/Chlooow/Projet_Fourmis_ProgImp`, 
+          image: "images/projets/algo/antswalk.gif" 
         },
         { 
           title: "Algorithm homework", 
           description: `A homework to understand the concepts of lists and trees
-          langage : C
-          Link to the repository : `, 
-          image: "images/algo/algorithm.jpg" 
+          langage : C`, 
+          image: "images/projets/algo/DMalgo.png" 
         },
         { 
           title: "Solitaire game homework", 
           description: `A homework to understand functional programming
-          langage : OCaml
-          Link to the repository : `, 
-          image: "images/algo/algorithm.jpg" 
+          langage : OCaml`, 
+          image: "images/projets/algo/solitaire.png" 
         },
+        { 
+          title: "industrialization of image based software", 
+          description: `A project from my Intro to Computer Science (Info 111) course, focused on basic image processing techniques like binary and grayscale manipulation,
+           edge detection, color processing, and region segmentation. It helped me apply core programming concepts such as loops, arrays, functions, and modular design.
+          langage : C++
+          Link to the repository :https://github.com/Chlooow/Projet_Image_IntroInfo `, 
+          image: "images/projets/algo/projetimage.png" 
+        },
+        { 
+          title: "System homework", 
+          description: `A homework to understand system and concurrential programming
+          langage : C`,
+          image: "images/projets/algo/system.png" 
+        }
     ]
 };
 
