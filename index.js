@@ -160,7 +160,7 @@ const projects = {
           I added Docker support to streamline deployment and ensure consistent environments across different systems. This project allowed me to gain hands-on experience with web development,
            network monitoring tools, and containerization.
           Language : Python + Flask`, 
-          image: "images/projets/web/showme.png" 
+          image: "images/projets/web/showme.PNG" 
         },
         { title: "CafeCampus Start-up", 
           description: ` CaféCampus mobile application (PHP+Oracle)
