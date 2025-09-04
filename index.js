@@ -198,6 +198,13 @@ const projects = {
         { title: "Garden App project",
           description: `Mini project in order to learn about UX/UI and HCI interaction by designing a Garden managment`, 
           image: "images/projets/uxui/garden.png" 
+        },
+        { title: "EduGaze Interface design",
+          description: `EduGaze is a prototype interface designed to help lecturers better understand student engagement in real time. By combining lightweight eye-tracking glasses with an intuitive dashboard,
+          the app detects when and where attention drops during a lesson. 
+          Subtle distractions become visible insights, allowing teachers to adapt their methods on the spot and support more inclusive, effective learning.
+          EduGaze is a prototype interface created during UNESCO’s Digital Learning Week 2025 Hackathon in Paris. Born from just a few hours of collaboration.`, 
+          image: "images/projets/uxui/linkedin.jpg" 
         }
     ],
 
