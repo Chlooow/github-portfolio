@@ -99,6 +99,15 @@ const backBtn = document.getElementById('back-btn'); // bouton fixe
 
 const projects = {
     "Datascience and IA": [
+        {
+          title: "Price Prediction of Chanel products",
+          description:`The objective of this project is to develop a machine learning model capable of predicting the price of Chanel products in Singapore based on their characteristics (category, luxury level, etc.). 
+          This work is part of an exploration of statistical learning applied to the luxury sector, 
+          with a focus on result interpretability and scientific rigor.
+          Language : Python + Jupyter Notebook
+          Link : https://github.com/Chlooow/price-prediction-chanel`,
+          image: "images/projets/data/output2.png"
+        },
         { title: "I.M Chatbot", 
           description: `IN DEVELOPMENT - This project is to explore and try to develop a AI Chatbot on the theme of I.M a famous singer from Korea. 
           By taking the ressources and knowledges from IBM course build your own chatbot, i'm able to do a chatbot with Javascript, PHP, HTML/CSS and JQuery and AJAX request. 
