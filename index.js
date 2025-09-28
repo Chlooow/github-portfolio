@@ -100,6 +100,16 @@ const backBtn = document.getElementById('back-btn'); // bouton fixe
 const projects = {
     "Datascience and IA": [
         {
+          title: "Artificial Neuronal Network",
+          description:`The objective of this project is to develop a ANN based on
+          logic gates with threads. This project involves the implementation of a Multi-Layer Perceptron (MLP) neural network in C 
+          to learn and predict the outputs of fundamental logic gates (AND, OR, XOR). 
+          Crucially, the training process is optimized using multithreading to calculate updates concurrently, showcasing proficiency in both machine learning fundamentals and concurrent programming.
+          Language : C
+          Link : https://github.com/Chlooow/ANN-logic-gate`,
+          image: "images/projets/data/projet-rna.png"
+        },
+        {
           title: "Price Prediction of Chanel products",
           description:`The objective of this project is to develop a machine learning model capable of predicting the price of Chanel products in Singapore based on their characteristics (category, luxury level, etc.). 
           This work is part of an exploration of statistical learning applied to the luxury sector, 
