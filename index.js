@@ -173,13 +173,13 @@ const projects = {
           Language : Html + css + javascript`, 
           image: "images/projets/web/portfolio.png" 
         },
-        { title: "Showme", 
-          description: `During my development internship at TDF, I worked on ShowMe, a Python Flask application for network monitoring. 
+        { title: "Network monitoring app", 
+          description: `During my development internship at TDF, I worked on a interactive app for networking, a Python Flask application. 
           I maintained and improved the application by implementing new features and enhancing its deployment process. In particular, 
           I added Docker support to streamline deployment and ensure consistent environments across different systems. This project allowed me to gain hands-on experience with web development,
            network monitoring tools, and containerization.
           Language : Python + Flask`, 
-          image: "images/projets/web/showme.PNG" 
+          image: "images/projets/web/.PNG" 
         },
         { title: "CafeCampus Start-up", 
           description: ` CaféCampus mobile application (PHP+Oracle)
