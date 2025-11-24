@@ -263,6 +263,16 @@ const projects = {
 
     "Algorithm and System": [
         { 
+          title: "K-Beauty Image Editor", 
+          description: `K-Beauty Image Editor is an image-processing application developed as part of the Software Tools and Open Development course in the
+          Master’s program in Computer Science & Big Data.
+          The goal of the project is to apply fundamental concepts of digital image 
+          processing through a complete and user-friendly interface built in Scilab 2026.
+          langage : Scilab 2026
+          Link to the repository : https://github.com/Chlooow/Kbeauty-Image-Editor `, 
+          image: "images/projets/algo/Interface_Scilab.png" 
+        },
+        { 
           title: "Pyramid of Ulam", 
           description: `Mathematical representation in the form of a 3D pyramid + 
           Processing in order to explore the graphical interfaces and 3D programming.
@@ -296,7 +306,7 @@ const projects = {
           description: `A project from my Intro to Computer Science (Info 111) course, focused on basic image processing techniques like binary and grayscale manipulation,
            edge detection, color processing, and region segmentation. It helped me apply core programming concepts such as loops, arrays, functions, and modular design.
           langage : C++
-          Link to the repository :https://github.com/Chlooow/Projet_Image_IntroInfo `, 
+          link: https://github.com/Chlooow/Projet_Image_IntroInfo`, 
           image: "images/projets/algo/projetimage.png" 
         },
         { 
@@ -307,6 +317,12 @@ const projects = {
         }
     ]
 };
+
+function parseLinks(text) {
+    // Remplace "Link : URL" ou "link to the repository: URL" ou "Link to the repository : URL" par un lien cliquable
+    return text.replace(/(Link|link)\s*(to the repository)?\s*:\s*(https?:\/\/[^\s]+)/gi, 
+        '<br><strong>$1$2:</strong> <a href="$3" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub →</a>');
+}
 
 // Gestion clic sur les thèmes
 listItems.forEach(item => {
@@ -330,6 +346,7 @@ listItems.forEach(item => {
 
         // Vider les projets précédents
         projectDetail.querySelectorAll('.project-item').forEach(el => el.remove());
+        
 
         // Générer les projets
         projectArray.forEach(p => {
@@ -341,7 +358,7 @@ listItems.forEach(item => {
                 </div>
                 <div class="project-info">
                     <h2>${p.title}</h2>
-                    <p>${p.description}</p>
+                    <p>${parseLinks(p.description)}</p>
                 </div>
             `;
             projectDetail.appendChild(projectHTML);
@@ -375,7 +392,7 @@ backBtn.addEventListener('click', () => {
     // Réafficher toutes les catégories
     listItems.forEach(item => {
         item.style.display = 'block';
-        item.classList.remove('clicked'); // <- supprime la classe clicked pour restaurer le style
+        item.classList.remove('clicked');
     });
 
     // Vider les projets
