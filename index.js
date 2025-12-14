@@ -100,6 +100,19 @@ const backBtn = document.getElementById('back-btn'); // bouton fixe
 const projects = {
     "Datascience and IA": [
         {
+          title: "Price Prediction of Dior China products",
+          description:`The objective of this project is to develop 
+          a machine learning model capable of predicting the price of Dior products 
+          in China based on their characteristics (category, luxury level, etc.).
+          This work is part of an exploration of statistical learning applied to the luxury sector, 
+          with a focus on result interpretability and scientific rigor.
+          Language : Python + Jupyter Notebook
+          link to dataset : huggingface.co/datasets/DBQ/Dior.Product.prices.China
+          Link :https://github.com/Chlooow/Projet-Apprentissage-Artificiel`,
+          image: "images/projets/data/dior-project.png"
+
+        },
+        {
           title: "Artificial Neuronal Network",
           description:`The objective of this project is to develop a ANN based on
           logic gates with threads. This project involves the implementation of a Multi-Layer Perceptron (MLP) neural network in C 
@@ -109,15 +122,15 @@ const projects = {
           Link : https://github.com/Chlooow/ANN-logic-gate`,
           image: "images/projets/data/projet-rna.png"
         },
-        {
-          title: "Price Prediction of Chanel products",
-          description:`The objective of this project is to develop a machine learning model capable of predicting the price of Chanel products in Singapore based on their characteristics (category, luxury level, etc.). 
-          This work is part of an exploration of statistical learning applied to the luxury sector, 
-          with a focus on result interpretability and scientific rigor.
-          Language : Python + Jupyter Notebook
-          Link : https://github.com/Chlooow/price-prediction-chanel`,
-          image: "images/projets/data/output2.png"
-        },
+        // {
+        //   title: "Price Prediction of Chanel products",
+        //   description:`The objective of this project is to develop a machine learning model capable of predicting the price of Chanel products in Singapore based on their characteristics (category, luxury level, etc.). 
+        //   This work is part of an exploration of statistical learning applied to the luxury sector, 
+        //   with a focus on result interpretability and scientific rigor.
+        //   Language : Python + Jupyter Notebook
+        //   Link : https://github.com/Chlooow/price-prediction-chanel`,
+        //   image: "images/projets/data/output2.png"
+        // },
         { title: "I.M Chatbot", 
           description: `IN DEVELOPMENT - This project is to explore and try to develop a AI Chatbot on the theme of I.M a famous singer from Korea. 
           By taking the ressources and knowledges from IBM course build your own chatbot, i'm able to do a chatbot with Javascript, PHP, HTML/CSS and JQuery and AJAX request. 
@@ -203,7 +216,7 @@ const projects = {
           description: `shopping website using and learning about React and Node.js
           Language : React + Node.js`, 
           image: "images/projets/web/ahgavote.png" 
-        },
+        }
         
         
     ],
