@@ -25,7 +25,7 @@ const translations = {
   fr: {
     homeTitle: "PORTFOLIO DE CHLOE",
     homeIntro: `Bienvenue sur mon portfolio qui met en avant l’ensemble des projets en informatique et en UX/UI que j’ai réalisés au cours de mes années universitaires, ainsi que mes projets personnels.  
-                Je suis récemment diplômée d’une Licence en Informatique à l’Université Paris-Saclay et je vais prochainement débuter un Master en Big Data.  
+                Je suis actuellent en Master Informatiquet & Big Data.  
                 Ambitieuse et créative, je suis toujours prête à relever de nouveaux défis !  
                 Je suis également artiste sur les réseaux sociaux, n’hésitez pas à découvrir mes peintures ici ✨<a href="#">Mes Peintures</a>✨.
  `,
@@ -179,8 +179,39 @@ const projects = {
           image: "images/projets/data/bdd.png" 
         }
     ],
+"Robotics": [
+        { 
+          title: "VIGILIS - Surveillance robot", 
+          description: `This project was developed as part of the Robotics option in the Master 1 Computer Science & Big Data program, supervised by Mrs. Seddiki.<br>
+The goal is to develop a TurtleBot3 Waffle robot capable of tracking a colored object (e.g., a red cube) using its camera and real-time image processing with ROS and OpenCV.<br><br>
 
+<strong>Key Features:</strong><br>
+- Color Detection: The robot detects a specific colored object (primarily red)<br>
+- Real-time Image Analysis: Processes camera feed to locate the object's position<br>
+- Autonomous Tracking: Calculates offset between object and image center<br>
+- Adaptive Movement:<br>
+&nbsp;&nbsp;&nbsp;- Moves forward when object is far<br>
+&nbsp;&nbsp;&nbsp;- Stops when object is close<br>
+&nbsp;&nbsp;&nbsp;- Rotates left/right to keep object centered<br><br>
+
+<strong>Technologies:</strong> ROS (Robot Operating System), Gazebo Simulator, OpenCV, Python<br>
+<strong>Course:</strong> Robotics Option - Master 1 Informatique & Big Data<br><br>
+
+This project allowed me to discover robotics fundamentals, including sensor integration, computer vision, and autonomous navigation systems.<br><br>
+
+Language: Python + ROS + OpenCV<br>
+Link to the repository: https://github.com/Chlooow/projet-Robotique-2025`,
+          image: "images/projets/robotics/vigilis-logo.png" 
+        }
+    ],
     "Web Development": [
+        { title: "NimbusWords - Cloud word processor", 
+          description: ` For my Master 1 Computer Science & Big Data, for Internet and Hypermedia option, 
+          we had to create a cloud-based word processor in order to learn about web technologies and how we use datas to
+          make an web application.
+          Language : Html + css + javascript + PHP`, 
+          image: "images/projets/web/screen_nimbuswords-2.png" 
+        },
         { title: "Portfolio personnel", 
           description: `My interactif portforlio .
           Language : Html + css + javascript`, 
