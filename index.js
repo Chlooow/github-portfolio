@@ -210,7 +210,7 @@ Link to the repository: https://github.com/Chlooow/projet-Robotique-2025`,
           we had to create a cloud-based word processor in order to learn about web technologies and how we use datas to
           make an web application.
           Language : Html + css + javascript + PHP`, 
-          image: "images/projets/web/screen_nimbuswords-2.png" 
+          image: "images/projets/web/screen_nimbusword-2.png" 
         },
         { title: "Portfolio personnel", 
           description: `My interactif portforlio .
